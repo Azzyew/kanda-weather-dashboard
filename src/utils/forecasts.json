@@ -1,42 +1,42 @@
 [
-    {
-        "region": "Uyo, NG",
-        "date": "January 18, 2021",
-        "pressure": 1000.7,
-        "temperature": 29.5,
-        "humidity": 77,
-        "condition": "Cloudy",
-        "wind": "WSW at 5 m/s",
-        "rainChance": 80
-    },
-    {
-        "region": "Uyo, NG",
-        "date": "February 7, 2021",
-        "pressure": 999.3,
-        "temperature": 34.7,
-        "humidity": 57,
-        "condition": "Cloudy",
-        "wind": null,
-        "rainChance": 20
-    },
-    {
-        "region": "Uyo, NG",
-        "date": "March 9, 2021",
-        "pressure": 998.2,
-        "temperature": 34.9,
-        "humidity": 60,
-        "condition": "Sunny",
-        "wind": "NE at 15 m/s",
-        "rainChance": 20
-    },
-    {
-        "region": "Accra, GH",
-        "date": "June 9, 2021",
-        "pressure": 1002.0,
-        "temperature": 32.7,
-        "humidity": 68,
-        "condition": "Partly Cloudy",
-        "wind": null,
-        "rainChance": 30
-    }
+  {
+    "region": "Uyo, NG",
+    "date": "January 18, 2021",
+    "pressure": "1000.7 mb",
+    "temperature": "29.5 C",
+    "humidity": "77%",
+    "condition": "Cloudy",
+    "wind": "WSW at 5 m/s",
+    "rainChance": "80%"
+  },
+  {
+    "region": "Uyo, NG",
+    "date": "February 7, 2021",
+    "pressure": "999.3 mb",
+    "temperature": "34.7 C",
+    "humidity": "57%",
+    "condition": "Cloudy",
+    "wind": null,
+    "rainChance": "20%"
+  },
+  {
+    "region": "Uyo, NG",
+    "date": "March 9, 2021",
+    "pressure": "998.2 mb",
+    "temperature": "34.9 C",
+    "humidity": "60%",
+    "condition": "Sunny",
+    "wind": "NE at 15 m/s",
+    "rainChance": "20%"
+  },
+  {
+    "region": "Accra, GH",
+    "date": "June 9, 2021",
+    "pressure": "1002.0 mb",
+    "temperature": "32.7 C",
+    "humidity": "68%",
+    "condition": "Partly Cloudy",
+    "wind": null,
+    "rainChance": "30%"
+  }
 ]
