@@ -31,7 +31,13 @@ export default function App() {
       </header>
     
       <main>
-        <MainForecast />
+        <MainForecast
+          location="Uyo, Nigeria"
+          date="01/18/2021"
+          condition="Cloudy"
+          temperature="29.5 C"
+          rainChance="80%"
+        />
         <div>
           <section>
             <div className="section-row">
