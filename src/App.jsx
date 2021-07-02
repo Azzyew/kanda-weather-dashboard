@@ -1,3 +1,6 @@
+import { ToggleThemeButton } from './components/ToggleThemeButton'
+import AppStyle from './styles/appStyle'
+// images
 import forecastIllustration from './assets/illustrations/cloudy.svg'
 import tempMedium from './assets/icons/temp-medium.svg'
 import miniRain from './assets/icons/mini-rain.svg'
@@ -6,11 +9,10 @@ import humidity from './assets/icons/humidity.svg'
 import pressure from './assets/icons/pressure.svg'
 import dangerImg from './assets/icons/danger.svg'
 import windImg from './assets/icons/wind.svg'
-import { ToggleThemeButton } from './components/ToggleThemeButton'
 
 export default function App() {
   return (
-    <div className="App">
+    <AppStyle>
       <header>
         <form>
           <select name="location" id="location">
@@ -78,6 +80,6 @@ export default function App() {
           </section>
         </div>
       </main>
-    </div>
+    </AppStyle>
   )
 }
