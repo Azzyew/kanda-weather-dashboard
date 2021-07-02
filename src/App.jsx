@@ -1,6 +1,3 @@
-import forecastIllustration from './assets/illustrations/cloudy.svg'
-import tempMedium from './assets/icons/temp-medium.svg'
-import miniRain from './assets/icons/mini-rain.svg'
 import soilMoisture from './assets/icons/soil-moisture.svg'
 import humidity from './assets/icons/humidity.svg'
 import pressure from './assets/icons/pressure.svg'
@@ -8,6 +5,8 @@ import windImg from './assets/icons/wind.svg'
 
 import { ToggleThemeButton } from './components/ToggleThemeButton'
 import { FloodRisk } from './components/FloodRisk'
+import { MainForecast } from './components/MainForecast'
+
 import AppStyle from './styles/appStyle'
 
 export default function App() {
@@ -32,14 +31,7 @@ export default function App() {
       </header>
     
       <main>
-        <div className="main-forecast">
-          <h1>Uyo, Nigeria - 01/18/2021</h1>
-
-          <img className="forecast-illustration" src={forecastIllustration} alt="Ilustration" />
-
-          <span className="condition">Cloudy, <strong>29.5 C</strong> <img src={tempMedium} alt="Temperature Icon" /></span>
-          <span>Chance of rain: <strong>80%</strong> <img src={miniRain} alt="Rain Icon" /></span>
-        </div>
+        <MainForecast />
         <div>
           <section>
             <div className="section-row">
@@ -74,7 +66,7 @@ export default function App() {
               <img src={soilMoisture} alt="Soil Moisture Icon" />
             </div>
 
-            <FloodRisk />
+            <FloodRisk risk />
           </section>
         </div>
       </main>
