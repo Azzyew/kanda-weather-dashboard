@@ -1,5 +1,10 @@
 import Select from 'react-select'
-import { controlStyles, optionStyles, valueStyles } from './style'
+import {
+    controlStyles,
+    optionStyles,
+    valueStyles,
+    menuStyles
+} from './style'
 
 const options = [
     { value: 'uyo', label: 'Uyo, Nigeria' },
@@ -12,6 +17,7 @@ export function SelectInput() {
             isSearchable={false} options={options}
             styles={{
                 control: controlStyles,
+                menu: menuStyles,
                 option: optionStyles,
                 singleValue: valueStyles
             }}
