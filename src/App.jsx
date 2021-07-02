@@ -3,8 +3,6 @@ export default function App() {
     <div className="App">
       <header>
         <form>
-          {/* <input type="text" name="location" placeholder="Select a location" />
-          <input type="text" name="date" placeholder="Select a date" /> */}
           <select name="location" id="location">
             <option value="default">Select a location</option>
             <option value="uyo">Uyo, NG</option>
