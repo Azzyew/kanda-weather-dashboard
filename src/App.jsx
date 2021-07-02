@@ -6,6 +6,7 @@ import windImg from './assets/icons/wind.svg'
 import { ToggleThemeButton } from './components/ToggleThemeButton'
 import { FloodRisk } from './components/FloodRisk'
 import { MainForecast } from './components/MainForecast'
+import { SelectInput } from './components/SelectInput'
 
 import StyledApp from './styles/appStyle'
 
@@ -14,7 +15,7 @@ export default function App() {
     <StyledApp>
       <header>
         <form>
-          <select name="location" id="location">
+          {/* <select name="location" id="location">
             <option value="default">Select a location</option>
             <option value="uyo">Uyo, Nigeria</option>
             <option value="accra">Accra, Ghana</option>
@@ -24,7 +25,9 @@ export default function App() {
             <option value="default">Select a date</option>
             <option value="01/18/2021">01/18/2021</option>
             <option value="06/06/2021">06/06/2021</option>
-          </select>
+          </select> */}
+
+          <SelectInput />
         </form>
 
         <ToggleThemeButton />
