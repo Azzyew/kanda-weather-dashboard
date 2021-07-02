@@ -1,14 +1,14 @@
-import { ToggleThemeButton } from './components/ToggleThemeButton'
-import AppStyle from './styles/appStyle'
-// images
 import forecastIllustration from './assets/illustrations/cloudy.svg'
 import tempMedium from './assets/icons/temp-medium.svg'
 import miniRain from './assets/icons/mini-rain.svg'
 import soilMoisture from './assets/icons/soil-moisture.svg'
 import humidity from './assets/icons/humidity.svg'
 import pressure from './assets/icons/pressure.svg'
-import dangerImg from './assets/icons/danger.svg'
 import windImg from './assets/icons/wind.svg'
+
+import { ToggleThemeButton } from './components/ToggleThemeButton'
+import { FloodRisk } from './components/FloodRisk'
+import AppStyle from './styles/appStyle'
 
 export default function App() {
   return (
@@ -74,9 +74,7 @@ export default function App() {
               <img src={soilMoisture} alt="Soil Moisture Icon" />
             </div>
 
-            <div className="flood-risk">
-              <img src={dangerImg} alt="!" /> High flood risk
-            </div>
+            <FloodRisk />
           </section>
         </div>
       </main>

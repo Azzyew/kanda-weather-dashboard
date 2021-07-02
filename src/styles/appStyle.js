@@ -104,24 +104,6 @@ const AppStyle = styled.div`
         justify-content: space-between;
         gap: 2rem;
       }
-
-      .flood-risk {
-        padding: .5rem 2.5rem;
-        background: #FFCECE;
-        border-radius: 20px;
-        gap: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &.green {
-          background: #BCFFB1;
-        }
-
-        img {
-          width: 2rem;
-        }
-      }
     }
   }
 `

@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import './styles.css'
+import ToggleThemeButtonStyle from './style'
 
 export function ToggleThemeButton() {
     const [isDarkTheme, setIsDarkTheme] = useState(false)
 
     return (
-        <button
+        <ToggleThemeButtonStyle
             onClick={() => setIsDarkTheme(!isDarkTheme)}
             className={`toggle-theme ${isDarkTheme ? 'dark' : ''}`}
         >
             <div className="button-circle"></div>
             <div className="button-behind"></div>
-        </button>
+        </ToggleThemeButtonStyle>
     )
 }
