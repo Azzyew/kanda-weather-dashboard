@@ -10,7 +10,7 @@ const ToggleThemeButtonStyle = styled.button`
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
-        background: #444444;
+        background: var(--font-color);
         position: absolute;
         left: -1rem;
         top: -.5rem;
@@ -21,7 +21,7 @@ const ToggleThemeButtonStyle = styled.button`
         width: 2.5rem;
         height: 1.25rem;
         border-radius: 25px;
-        background: #a4a4a4;
+        background: var(--gray);
     }
 
     &.dark .button-circle {

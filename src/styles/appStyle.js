@@ -5,8 +5,8 @@ const AppStyle = styled.div`
   padding: 3rem 5rem;
 
   .main-forecast, section, select {
-    background: #fdfdfd;
-    border: 1px solid #c4c4c4;
+    background: var(--background);
+    border: 1px solid var(--border-color);
   }
 
   header {
@@ -21,7 +21,7 @@ const AppStyle = styled.div`
       select {
         min-width: 200px;
         padding: .5rem;
-        border: 1px solid #c4c4c4;
+        border: 1px solid var(--border-color);
         border-radius: 5px;
       }
     }

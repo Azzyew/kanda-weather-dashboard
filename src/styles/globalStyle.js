@@ -1,6 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --body-background: #F0F0F0;
+    --background: #FDFDFD;
+    --font-color: #444444;
+    --border-color: #C4C4C4;
+    --gray: #A4A4A4;
+    --soft-red: #FFCECE;
+    --soft-green: #BCFFB1
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -24,11 +34,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6, span, input, label, button, p {
-    color: #444444;
+    color: var(--font-color);
   }
 
   body {
-    background: #f0f0f0;
+    background: var(--body-background);
   }
 `;
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const FloodRiskStyle = styled.div`
     padding: .5rem 2.5rem;
-    background: #FFCECE;
+    background: var(--soft-red);
     border-radius: 20px;
     gap: 1rem;
     display: flex;
@@ -10,7 +10,7 @@ const FloodRiskStyle = styled.div`
     justify-content: space-between;
 
     &.green {
-        background: #BCFFB1;
+        background: var(--soft-green);
     }
 
     img {
