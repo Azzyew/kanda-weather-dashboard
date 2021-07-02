@@ -6,13 +6,13 @@ const StyledToggleThemeButton = styled.button`
     font-size: 0;
 
     .button-circle {
-        width: 2rem;
-        height: 2rem;
+        width: 1.75rem;
+        height: 1.75rem;
         border-radius: 50%;
         background: var(--font-color);
         position: absolute;
         left: -1rem;
-        top: -.5rem;
+        top: -.25rem;
         transition: all .2s;
     }
 

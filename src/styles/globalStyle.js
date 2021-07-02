@@ -48,6 +48,19 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: var(--body-background);
   }
+
+  /* responsive fonts */
+  @media(max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+  }
+
+  @media(max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+  }
 `;
 
 export default GlobalStyle;
