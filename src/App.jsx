@@ -25,8 +25,8 @@ export default function App() {
 
           <div className="forecast-illustration"></div>
 
-          <span>Cloudy, <strong>29.5 C</strong></span>
-          <span>Change of rain: <strong>80%</strong></span>
+          <span className="condition">Cloudy, <strong>29.5 C</strong></span>
+          <span>Chance of rain: <strong>80%</strong></span>
         </div>
         <div>
           <section>

@@ -41,16 +41,25 @@ select {
 }
 
 main {
-    margin-top: 3rem;
+    margin-top: 4rem;
+    gap: 3rem;
     display: flex;
     justify-content: space-between;
+}
+
+main > div {
+  flex: 1;
+}
+
+.condition {
+  font-size: 2rem;
 }
 
 .main-forecast, section {
     background: #fdfdfd;
     border: 1px solid #c4c4c4;
     border-radius: 8px;
-    padding: 3rem;
+    padding: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,13 +79,24 @@ main > div:last-child {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 2rem;
+}
+
+section:last-child {
+  gap: 2.5rem;
 }
 
 .flood-risk {
     text-align: center;
+    padding: .5rem 1rem;
+    background: #FFCECE;
+    border-radius: 10px;
 }
 
 section div {
     min-width: 200px;
+}
+
+div  {
+  font-size: 1.25rem;
 }
