@@ -1,7 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,15 +6,11 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     height: 100vh;
   }
-  #__next {
-    position: relative;
-    min-height: 100vh;
-  } 
   body {
     font-family: 'Open Sans', sans-serif;
+  }
     h1 {
       font-family: 'Rubik', sans-serif;
-      line-height: 26px;
     }
     input, span, label, button, p {
       font-family: 'Open Sans', sans-serif;
@@ -25,7 +18,23 @@ const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, span, input, label, button, p {
       color: #444444;
     }
-  }
-`;
 
-export default GlobalStyle;
+body {
+    background: #f0f0f0;
+    padding: 3rem 4rem;
+}
+    
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    gap: 2rem;
+}
+
+select {
+    padding: .25rem .5rem;
+    border: 1px solid #c4c4c4;
+}

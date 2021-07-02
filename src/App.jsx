@@ -1,12 +1,21 @@
-import './App.css'
-
 export default function App() {
   return (
     <div className="App">
       <header>
         <form>
-          <input type="select" name="location" />
-          <input type="select" name="date" />
+          {/* <input type="text" name="location" placeholder="Select a location" />
+          <input type="text" name="date" placeholder="Select a date" /> */}
+          <select name="location" id="location">
+            <option value="default">Select a location</option>
+            <option value="uyo">Uyo, NG</option>
+            <option value="accra">Accra, GH</option>
+          </select>
+          
+          <select name="date" id="date">
+            <option value="default">Select a date</option>
+            <option value="01/18/2021">01/18/2021</option>
+            <option value="06/06/2021">06/06/2021</option>
+          </select>
         </form>
 
         <button>Dark Theme</button>
