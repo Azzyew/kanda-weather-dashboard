@@ -10,6 +10,17 @@ import { SelectInput } from './components/SelectInput'
 
 import StyledApp from './styles/appStyle'
 
+const locationOptions = [
+  { value: 'uyo', label: 'Uyo, Nigeria' },
+  { value: 'accra', label: 'Accra, Ghana' }
+]
+
+const dateOptions = [
+  { value: '01/18/2021', label: '01/18/2021' },
+  { value: '02/07/2021', label: '02/07/2021' },
+  { value: '03/09/2021', label: '03/09/2021' }
+]
+
 export default function App() {
   return (
     <StyledApp>
@@ -27,12 +38,13 @@ export default function App() {
             <option value="06/06/2021">06/06/2021</option>
           </select> */}
 
-          <SelectInput />
+          <SelectInput placeholder="location" options={locationOptions} />
+          <SelectInput placeholder="date" options={dateOptions} />
         </form>
 
         <ToggleThemeButton />
       </header>
-    
+
       <main>
         <MainForecast
           location="Uyo, Nigeria"
@@ -65,7 +77,7 @@ export default function App() {
               <img src={windImg} alt="Wind Icon" />
             </div>
           </section>
-          
+
           <section>
             <div className="section-row">
               <p>

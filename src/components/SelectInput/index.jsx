@@ -6,14 +6,9 @@ import {
     menuStyles
 } from './style'
 
-const options = [
-    { value: 'uyo', label: 'Uyo, Nigeria' },
-    { value: 'accra', label: 'Accra, Ghana' }
-]
-
-export function SelectInput() {
+export function SelectInput({ placeholder, options }) {
     return (
-        <Select placeholder="Select a location" isClearable
+        <Select placeholder={`Select a ${placeholder}`} isClearable
             isSearchable={false} options={options}
             styles={{
                 control: controlStyles,
