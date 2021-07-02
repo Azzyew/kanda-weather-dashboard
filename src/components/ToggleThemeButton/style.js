@@ -11,7 +11,7 @@ const StyledToggleThemeButton = styled.button`
         border-radius: 50%;
         background: var(--font-color);
         position: absolute;
-        left: -1rem;
+        left: -.75rem;
         top: -.25rem;
         transition: all .2s;
     }
