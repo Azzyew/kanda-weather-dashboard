@@ -6,6 +6,7 @@ import humidity from './assets/icons/humidity.svg'
 import pressure from './assets/icons/pressure.svg'
 import dangerImg from './assets/icons/danger.svg'
 import windImg from './assets/icons/wind.svg'
+import { ToggleThemeButton } from './components/ToggleThemeButton'
 
 export default function App() {
   return (
@@ -14,8 +15,8 @@ export default function App() {
         <form>
           <select name="location" id="location">
             <option value="default">Select a location</option>
-            <option value="uyo">Uyo, NG</option>
-            <option value="accra">Accra, GH</option>
+            <option value="uyo">Uyo, Nigeria</option>
+            <option value="accra">Accra, Ghana</option>
           </select>
           
           <select name="date" id="date">
@@ -25,7 +26,7 @@ export default function App() {
           </select>
         </form>
 
-        <button>Dark Theme</button>
+        <ToggleThemeButton />
       </header>
     
       <main>
