@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const FloodRiskStyle = styled.div`
+const StyledFloodRisk = styled.div`
     padding: .5rem 2.5rem;
     background: var(--soft-red);
     border-radius: 20px;
@@ -18,4 +18,4 @@ const FloodRiskStyle = styled.div`
     }
 `
 
-export default FloodRiskStyle
+export default StyledFloodRisk

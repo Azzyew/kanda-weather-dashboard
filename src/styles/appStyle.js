@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const AppStyle = styled.div`
+const StyledApp = styled.div`
   height: 100vh;
   padding: 3rem 5rem;
 
@@ -80,4 +80,4 @@ const AppStyle = styled.div`
   }
 `
 
-export default AppStyle
+export default StyledApp

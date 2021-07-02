@@ -7,11 +7,11 @@ import { ToggleThemeButton } from './components/ToggleThemeButton'
 import { FloodRisk } from './components/FloodRisk'
 import { MainForecast } from './components/MainForecast'
 
-import AppStyle from './styles/appStyle'
+import StyledApp from './styles/appStyle'
 
 export default function App() {
   return (
-    <AppStyle>
+    <StyledApp>
       <header>
         <form>
           <select name="location" id="location">
@@ -76,6 +76,6 @@ export default function App() {
           </section>
         </div>
       </main>
-    </AppStyle>
+    </StyledApp>
   )
 }

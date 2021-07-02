@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import ToggleThemeButtonStyle from './style'
+import StyledToggleThemeButton from './style'
 
 export function ToggleThemeButton() {
     const [currentTheme, setCurrentTheme] = useState(() => {
@@ -43,12 +43,12 @@ export function ToggleThemeButton() {
     }
 
     return (
-        <ToggleThemeButtonStyle
+        <StyledToggleThemeButton
             onClick={toggleCurrentTheme}
             className={`toggle-theme ${currentTheme === 'dark' ? 'dark' : ''}`}
         >
             <div className="button-circle"></div>
             <div className="button-behind"></div>
-        </ToggleThemeButtonStyle>
+        </StyledToggleThemeButton>
     )
 }

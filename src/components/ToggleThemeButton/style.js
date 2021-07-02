@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ToggleThemeButtonStyle = styled.button`
+const StyledToggleThemeButton = styled.button`
     border: none;
     position: relative;
     font-size: 0;
@@ -29,4 +29,4 @@ const ToggleThemeButtonStyle = styled.button`
     }
 `
 
-export default ToggleThemeButtonStyle
+export default StyledToggleThemeButton

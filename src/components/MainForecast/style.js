@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const MainForecastStyle = styled.div`
+const StyledMainForecast = styled.div`
     h1 {
         text-align: center;
     }
@@ -28,4 +28,4 @@ const MainForecastStyle = styled.div`
     }
 `
 
-export default MainForecastStyle
+export default StyledMainForecast
