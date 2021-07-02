@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Open Sans', sans-serif;
+    transition: all .2s;
   }
 
   h1 {
@@ -35,6 +36,13 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6, span, input, label, button, p {
     color: var(--font-color);
+  }
+
+  button, a {
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+    border: none;
   }
 
   body {

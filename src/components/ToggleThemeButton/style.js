@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const ToggleThemeButtonStyle = styled.button`
     border: none;
     position: relative;
-    cursor: pointer;
     font-size: 0;
 
     .button-circle {
