@@ -26,18 +26,6 @@ export default function App() {
     <StyledApp>
       <header>
         <form>
-          {/* <select name="location" id="location">
-            <option value="default">Select a location</option>
-            <option value="uyo">Uyo, Nigeria</option>
-            <option value="accra">Accra, Ghana</option>
-          </select>
-          
-          <select name="date" id="date">
-            <option value="default">Select a date</option>
-            <option value="01/18/2021">01/18/2021</option>
-            <option value="06/06/2021">06/06/2021</option>
-          </select> */}
-
           <SelectInput placeholder="location" options={locationOptions} />
           <SelectInput placeholder="date" options={dateOptions} isDisabled />
         </form>
