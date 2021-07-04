@@ -13,7 +13,7 @@ const StyledFloodRisk = styled.div`
         background: var(--soft-green);
     }
 
-    img {
+    svg {
         width: 2rem;
     }
 `
