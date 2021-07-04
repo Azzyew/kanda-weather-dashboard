@@ -47,8 +47,9 @@ export function ToggleThemeButton() {
             onClick={toggleCurrentTheme}
             className={`toggle-theme ${currentTheme === 'dark' ? 'dark' : ''}`}
         >
-            <div className="button-circle"></div>
-            <div className="button-behind"></div>
+            <div className="button-behind">
+                <div className="button-circle"></div>
+            </div>
         </StyledToggleThemeButton>
     )
 }

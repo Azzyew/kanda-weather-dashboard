@@ -5,27 +5,27 @@ const StyledToggleThemeButton = styled.button`
     position: relative;
     font-size: 0;
 
-    .button-circle {
-        width: 1.75rem;
-        height: 1.75rem;
-        border-radius: 50%;
-        background: var(--font-color);
-        position: absolute;
-        left: -.75rem;
-        top: -.25rem;
-        transition: all .2s;
-    }
-
     .button-behind {
-        width: 2.5rem;
-        height: 1.25rem;
+        width: 3rem;
+        height: 1.5rem;
         border-radius: 25px;
         background: var(--gray);
     }
 
+    .button-circle {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: var(--font-color);
+        transition: all .2s;
+        position: absolute;
+        left: .25rem;
+        top: .25rem;
+    }
+
     &.dark .button-circle {
         background: #eeeeee;
-        left: 1.5rem;
+        left: 1.75rem;
     }
 `
 
