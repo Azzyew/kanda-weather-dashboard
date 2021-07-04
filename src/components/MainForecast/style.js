@@ -22,7 +22,7 @@ const StyledMainForecast = styled.div`
             margin-left: .5rem;
         }
 
-        img {
+        svg {
             width: 2.5rem;
         }
     }
