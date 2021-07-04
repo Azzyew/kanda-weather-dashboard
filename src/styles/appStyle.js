@@ -43,7 +43,7 @@ const StyledApp = styled.div`
 
     .main-forecast, section {
       border-radius: 8px;
-      padding: 2.5rem;
+      padding: 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -65,6 +65,7 @@ const StyledApp = styled.div`
 
         svg {
           width: 1.75rem;
+          height: 1.75rem;
         }
       }
 

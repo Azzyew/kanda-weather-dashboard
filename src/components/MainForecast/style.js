@@ -8,7 +8,7 @@ const StyledMainForecast = styled.div`
     > svg {
         width: 40%;
         height: auto;
-        margin: 2rem 0;
+        margin: 1.5rem 0;
     }
 
     .condition {
@@ -25,6 +25,7 @@ const StyledMainForecast = styled.div`
 
         svg {
             width: 2.5rem;
+            height: 2.5rem;
         }
     }
 `
