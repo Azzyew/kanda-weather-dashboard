@@ -63,7 +63,7 @@ const StyledApp = styled.div`
           gap: 2.5rem;
         }
 
-        img {
+        svg {
           width: 1.75rem;
         }
       }

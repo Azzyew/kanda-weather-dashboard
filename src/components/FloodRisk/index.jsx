@@ -1,14 +1,14 @@
-import dangerImg from '../../assets/icons/danger.svg'
-import checkImg from '../../assets/icons/check.svg'
+import Danger from '../../svg/icons/Danger'
+import Check from '../../svg/icons/Check'
 import StyledFloodRisk from './style.js'
 
 export function FloodRisk({ risk = false }) {
     return (
         <StyledFloodRisk className={!risk ? 'green' : ''}>
             {risk ? (
-                <> <img src={dangerImg} alt="!" /> High flood risk </>
+                <> <Danger /> High flood risk </>
             ) : (
-                <> <img src={checkImg} alt="ok" /> Low flood risk </>
+                <> <Check /> Low flood risk </>
             )}
         </StyledFloodRisk>
     )
