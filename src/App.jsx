@@ -1,7 +1,7 @@
-import soilMoisture from './assets/icons/soil-moisture.svg'
-import humidity from './assets/icons/humidity.svg'
-import pressure from './assets/icons/pressure.svg'
-import windImg from './assets/icons/wind.svg'
+import SoilMoisture from './svg/icons/SoilMoisture'
+import Humidity from './svg/icons/Humidity'
+import Pressure from './svg/icons/Pressure'
+import Wind from './svg/icons/Wind'
 
 import { ToggleThemeButton } from './components/ToggleThemeButton'
 import { FloodRisk } from './components/FloodRisk'
@@ -60,21 +60,21 @@ export default function App() {
                 <span>Humidity:</span>
                 <strong>77%</strong>
               </p>
-              <img src={humidity} alt="Humidity Icon" />
+              <Humidity />
             </div>
             <div className="section-row">
               <p>
                 <span>Pressure:</span>
                 <strong>1000.7 mb</strong>
               </p>
-              <img src={pressure} alt="Pressure Icon" />
+              <Pressure />
             </div>
             <div className="section-row">
               <p>
                 <span>Wind:</span>
                 <strong>WSW at 5 m/s</strong>
               </p>
-              <img src={windImg} alt="Wind Icon" />
+              <Wind />
             </div>
           </section>
 
@@ -84,7 +84,7 @@ export default function App() {
                 <span>Soil Moisture:</span>
                 <strong>10 cm</strong>
               </p>
-              <img src={soilMoisture} alt="Soil Moisture Icon" />
+              <SoilMoisture />
             </div>
 
             <FloodRisk risk />
