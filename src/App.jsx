@@ -39,7 +39,7 @@ export default function App() {
           </select> */}
 
           <SelectInput placeholder="location" options={locationOptions} />
-          <SelectInput placeholder="date" options={dateOptions} />
+          <SelectInput placeholder="date" options={dateOptions} isDisabled />
         </form>
 
         <ToggleThemeButton />
