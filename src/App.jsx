@@ -1,7 +1,7 @@
-import SoilMoisture from './svg/icons/SoilMoisture'
-import Humidity from './svg/icons/Humidity'
-import Pressure from './svg/icons/Pressure'
-import Wind from './svg/icons/Wind'
+import { SoilMoisture } from './svg/icons/SoilMoisture'
+import { Humidity } from './svg/icons/Humidity'
+import { Pressure } from './svg/icons/Pressure'
+import { Wind } from './svg/icons/Wind'
 
 import { ToggleThemeButton } from './components/ToggleThemeButton'
 import { FloodRisk } from './components/FloodRisk'

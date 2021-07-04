@@ -5,8 +5,9 @@ const StyledMainForecast = styled.div`
         text-align: center;
     }
 
-    .forecast-illustration {
+    > svg {
         width: 40%;
+        height: auto;
         margin: 2rem 0;
     }
 
