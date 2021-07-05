@@ -61,6 +61,57 @@ const GlobalStyle = createGlobalStyle`
         font-size: 87.5%;
     }
   }
+
+  /* mobile */
+
+  @media(max-width: 1080px) {
+    header form {
+      gap: 1rem !important;
+    }
+
+    main {
+      gap: 1.5rem !important;
+
+      div {
+        font-size: 1rem !important;
+      }
+
+      .main-forecast, section {
+        padding: 1rem !important;
+      }
+
+      .main-forecast {
+        > svg {
+          margin: 1rem 0;
+        }
+
+        .condition {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .section-row {
+      gap: .75rem !important;
+    }
+  }
+
+  @media(max-width: 600px) {
+    header {
+      gap: 1rem;
+      flex-direction: column-reverse;
+    }
+
+    main {
+      gap: 2rem !important;
+      padding-bottom: 3rem;
+      flex-direction: column;
+
+      .main-forecast {
+        padding: 2rem 1rem !important;
+      }
+    }
+  }
 `;
 
 export default GlobalStyle;

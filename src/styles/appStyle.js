@@ -57,7 +57,7 @@ const StyledApp = styled.div`
       gap: 2rem;
 
       section {
-        min-width: 300px;
+        min-width: 230px;
 
         &:last-child {
           gap: 2.5rem;

@@ -4,7 +4,13 @@ export const controlStyles = (styles, { isDisabled }) => ({
     background: 'var(--background)',
     border: '1px solid var(--border-color)',
     opacity: isDisabled ? .6 : 1,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    '@media(max-width: 768px)': {
+        width: '35vw'
+    },
+    '@media(max-width: 600px)': {
+        width: '43vw'
+    }
 })
 
 export const menuStyles = styles => ({
