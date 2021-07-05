@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StyledApp = styled.div`
   height: 100vh;
-  padding: 3rem 5rem;
+  padding: 6vh 6vw;
 
   .main-forecast, section, select {
     background: var(--background);
@@ -28,7 +28,7 @@ const StyledApp = styled.div`
   }
 
   main {
-    margin-top: 3.5rem;
+    margin-top: 6vh;
     gap: 3rem;
     display: flex;
     justify-content: space-between;
