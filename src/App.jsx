@@ -55,7 +55,7 @@ export default function App() {
                 <span>Pressure:</span>
                 <strong>1000.7 mb</strong>
               </p>
-              <Pressure />
+              <Pressure color="var(--font-color)" background="var(--background)" />
             </div>
             <div className="section-row">
               <p>
@@ -72,7 +72,7 @@ export default function App() {
                 <span>Soil Moisture:</span>
                 <strong>10 cm</strong>
               </p>
-              <SoilMoisture />
+              <SoilMoisture color="var(--font-color)" />
             </div>
 
             <FloodRisk risk />

@@ -10,7 +10,7 @@ export function MainForecast({ location, date, condition, temperature, rainChanc
 
           <Cloudy className="forecast-illustration" />
 
-          <span className="condition">{condition}, <strong>{temperature}</strong> <TempMedium /></span>
+          <span className="condition">{condition}, <strong>{temperature}</strong> <TempMedium color="var(--font-color)" /></span>
           <span>Chance of rain: <strong>{rainChance}</strong> <MiniRain /></span>
         </StyledMainForecast>
     )
