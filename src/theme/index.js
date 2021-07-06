@@ -9,7 +9,6 @@ export const useTheme = () => {
     
     useEffect(() => {
         localStorage.setItem('theme', currentTheme)
-        console.log(currentTheme)
     }, [currentTheme])
 
     function toggleCurrentTheme() {
