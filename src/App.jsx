@@ -8,6 +8,9 @@ import { FloodRisk } from './components/FloodRisk'
 import { MainForecast } from './components/MainForecast'
 import { SelectInput } from './components/SelectInput'
 
+import { useTheme } from './theme'
+import { ThemeProvider } from 'styled-components'
+import GlobalStyle from './styles/globalStyle'
 import StyledApp from './styles/appStyle'
 
 const locationOptions = [
@@ -22,63 +25,68 @@ const dateOptions = [
 ]
 
 export default function App() {
+  const { themes, currentTheme, toggleCurrentTheme } = useTheme()
+
   return (
-    <StyledApp>
-      <header>
-        <form>
-          <SelectInput placeholder="location" options={locationOptions} />
-          <SelectInput placeholder="date" options={dateOptions} isDisabled />
-        </form>
+    <ThemeProvider theme={currentTheme === 'light' ? themes.light : themes.dark}>
+      <GlobalStyle />
+      <StyledApp>
+        <header>
+          <form>
+            <SelectInput placeholder="location" options={locationOptions} />
+            <SelectInput placeholder="date" options={dateOptions} isDisabled />
+          </form>
 
-        <ToggleThemeButton />
-      </header>
+          <ToggleThemeButton currentTheme={currentTheme} onClick={toggleCurrentTheme} />
+        </header>
 
-      <main>
-        <MainForecast
-          location="Uyo, Nigeria"
-          date="01/18/2021"
-          condition="Cloudy"
-          temperature="29.5 C"
-          rainChance="80%"
-        />
-        <div>
-          <section>
-            <div className="section-row">
-              <p>
-                <span>Humidity:</span>
-                <strong>77%</strong>
-              </p>
-              <Humidity />
-            </div>
-            <div className="section-row">
-              <p>
-                <span>Pressure:</span>
-                <strong>1000.7 mb</strong>
-              </p>
-              <Pressure color="var(--font-color)" background="var(--background)" />
-            </div>
-            <div className="section-row">
-              <p>
-                <span>Wind:</span>
-                <strong>WSW at 5 m/s</strong>
-              </p>
-              <Wind />
-            </div>
-          </section>
+        <main>
+          <MainForecast
+            location="Uyo, Nigeria"
+            date="01/18/2021"
+            condition="Cloudy"
+            temperature="29.5 C"
+            rainChance="80%"
+          />
+          <div>
+            <section>
+              <div className="section-row">
+                <p>
+                  <span>Humidity:</span>
+                  <strong>77%</strong>
+                </p>
+                <Humidity />
+              </div>
+              <div className="section-row">
+                <p>
+                  <span>Pressure:</span>
+                  <strong>1000.7 mb</strong>
+                </p>
+                <Pressure color="var(--font-color)" background="var(--background)" />
+              </div>
+              <div className="section-row">
+                <p>
+                  <span>Wind:</span>
+                  <strong>WSW at 5 m/s</strong>
+                </p>
+                <Wind />
+              </div>
+            </section>
 
-          <section>
-            <div className="section-row">
-              <p>
-                <span>Soil Moisture:</span>
-                <strong>10 cm</strong>
-              </p>
-              <SoilMoisture color="var(--font-color)" />
-            </div>
+            <section>
+              <div className="section-row">
+                <p>
+                  <span>Soil Moisture:</span>
+                  <strong>10 cm</strong>
+                </p>
+                <SoilMoisture color="var(--font-color)" />
+              </div>
 
-            <FloodRisk risk />
-          </section>
-        </div>
-      </main>
-    </StyledApp>
+              <FloodRisk risk />
+            </section>
+          </div>
+        </main>
+      </StyledApp>
+    </ThemeProvider>
   )
 }

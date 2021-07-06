@@ -2,10 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --body-background: #F0F0F0;
-    --background: #FDFDFD;
-    --font-color: #444444;
-    --border-color: #C4C4C4;
+    --body-background: ${props => props.theme.bodyBackground};
+    --background: ${props => props.theme.background};
+    --font-color: ${props => props.theme.fontColor};
+    --border-color: ${props => props.theme.borderColor};
     --gray: #A4A4A4;
     --soft-red: #FFCECE;
     --soft-green: #BCFFB1
