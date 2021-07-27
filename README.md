@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-execute">How to execute</a>
 </p>
 
@@ -19,11 +19,11 @@
 This project was developed with the following technologies:
 
 - [React](https://reactjs.org)
-<!-- - [Sass](https://sass-lang.com/) -->
+- [CSS-in-JS (Styled-Components)](https://styled-components.com/)
 
 ## 💻 Project
 
-Weather forecasts UI dashboard.
+Simple and clear Weather Forecast Dashboard for Kanda Weather Group, built with ReactJS during TAIKAI hackathon.
 
 ## 🚀 How to execute
 
