@@ -1,3 +1,5 @@
+import { useForecasts } from './data/forecastsContext'
+
 import { SoilMoisture } from './svg/icons/SoilMoisture'
 import { Humidity } from './svg/icons/Humidity'
 import { Pressure } from './svg/icons/Pressure'
@@ -13,18 +15,8 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles/globalStyle'
 import StyledApp from './styles/appStyle'
 
-const locationOptions = [
-  { value: 'uyo', label: 'Uyo, Nigeria' },
-  { value: 'accra', label: 'Accra, Ghana' }
-]
-
-const dateOptions = [
-  { value: '01/18/2021', label: '01/18/2021' },
-  { value: '02/07/2021', label: '02/07/2021' },
-  { value: '03/09/2021', label: '03/09/2021' }
-]
-
 export default function App() {
+  const { currentForecast, currentRegion } = useForecasts()
   const { themes, currentTheme, toggleCurrentTheme } = useTheme()
 
   return (
@@ -33,8 +25,8 @@ export default function App() {
       <StyledApp>
         <header>
           <form>
-            <SelectInput placeholder="location" options={locationOptions} />
-            <SelectInput placeholder="date" options={dateOptions} isDisabled />
+            <SelectInput type="region" />
+            <SelectInput type="date" isDisabled={!currentRegion} />
           </form>
 
           <ToggleThemeButton currentTheme={currentTheme} onClick={toggleCurrentTheme} />
@@ -42,32 +34,32 @@ export default function App() {
 
         <main>
           <MainForecast
-            location="Uyo, Nigeria"
-            date="01/18/2021"
-            condition="Cloudy"
-            temperature="29.5 C"
-            rainChance="80%"
+            region={currentForecast.region}
+            date={currentForecast.date}
+            condition={currentForecast.condition}
+            temperature={currentForecast.temperature}
+            rainChance={currentForecast.rainChance}
           />
           <div>
             <section>
               <div className="section-row">
                 <p>
                   <span>Humidity:</span>
-                  <strong>77%</strong>
+                  <strong>{currentForecast.humidity ?? "Information not found"}</strong>
                 </p>
                 <Humidity />
               </div>
               <div className="section-row">
                 <p>
                   <span>Pressure:</span>
-                  <strong>1000.7 mb</strong>
+                  <strong>{currentForecast.pressure ?? "Information not found"}</strong>
                 </p>
                 <Pressure color="var(--font-color)" background="var(--background)" />
               </div>
               <div className="section-row">
                 <p>
                   <span>Wind:</span>
-                  <strong>WSW at 5 m/s</strong>
+                  <strong>{currentForecast.wind ?? "Information not found"}</strong>
                 </p>
                 <Wind />
               </div>

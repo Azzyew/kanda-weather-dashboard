@@ -3,10 +3,10 @@ import { TempMedium } from '../../svg/icons/TempMedium'
 import { MiniRain } from '../../svg/icons/MiniRain'
 import StyledMainForecast from './style.js'
 
-export function MainForecast({ location, date, condition, temperature, rainChance }) {
+export function MainForecast({ region, date, condition, temperature, rainChance }) {
     return (
         <StyledMainForecast className="main-forecast">
-          <h1>{location} - {date}</h1>
+          <h1>{region} - {date}</h1>
 
           <Cloudy className="forecast-illustration" />
 

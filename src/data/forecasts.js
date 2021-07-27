@@ -1,4 +1,4 @@
-[
+export const forecasts = [
   {
     "region": "Uyo, NG",
     "date": "January 18, 2021",
