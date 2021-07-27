@@ -5,12 +5,11 @@ export function ToggleThemeButton({ currentTheme, onClick }) {
     return (
         <StyledToggleThemeButton
             onClick={onClick}
-            className={`toggle-theme ${currentTheme === 'dark' ? 'dark' : ''}`}
+            className={`toggle-theme ${currentTheme}`}
         >
-            <div className="button-behind">
-                <div className="button-circle">
-                    {currentTheme === 'dark' ? <DarkMode /> : <LightMode />}
-                </div>
+            <div className="button-bg">
+                <div class="animate-toggle" />
+                {currentTheme === 'dark' ? <DarkMode /> : <LightMode />}
             </div>
         </StyledToggleThemeButton>
     )
