@@ -6,26 +6,22 @@ const StyledToggleThemeButton = styled.button`
     font-size: 0;
 
     .button-behind {
-        width: 3rem;
-        height: 1.5rem;
+        width: 4rem;
+        height: 1.875rem;
+        padding: 0 .25rem 0 .4rem;
         border-radius: 25px;
         background: var(--gray);
+        display: flex;
+        align-items: center;
     }
 
-    .button-circle {
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        background: var(--font-color);
-        transition: all .2s;
-        position: absolute;
-        left: .25rem;
-        top: .25rem;
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
-    &.dark .button-circle {
-        background: #eeeeee;
-        left: 1.75rem;
+    &.dark .button-behind {
+        justify-content: flex-end;
     }
 `
 

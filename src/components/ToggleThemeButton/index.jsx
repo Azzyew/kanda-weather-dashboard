@@ -1,3 +1,4 @@
+import { DarkMode, LightMode } from '../../svg/icons/Themes'
 import StyledToggleThemeButton from './style'
 
 export function ToggleThemeButton({ currentTheme, onClick }) {
@@ -7,7 +8,9 @@ export function ToggleThemeButton({ currentTheme, onClick }) {
             className={`toggle-theme ${currentTheme === 'dark' ? 'dark' : ''}`}
         >
             <div className="button-behind">
-                <div className="button-circle"></div>
+                <div className="button-circle">
+                    {currentTheme === 'dark' ? <DarkMode /> : <LightMode />}
+                </div>
             </div>
         </StyledToggleThemeButton>
     )
