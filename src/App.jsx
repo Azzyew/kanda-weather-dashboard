@@ -38,28 +38,28 @@ export default function App() {
             date={currentForecast.date}
             condition={currentForecast.condition}
             temperature={currentForecast.temperature}
-            rainChance={currentForecast.rainChance}
+            rainChance={currentForecast.rainChance ?? 'Unknown'}
           />
           <div>
             <section>
               <div className="section-row">
                 <p>
                   <span>Humidity:</span>
-                  <strong>{currentForecast.humidity ?? "Information not found"}</strong>
+                  <strong>{currentForecast.humidity ?? "Unknown"}</strong>
                 </p>
                 <Humidity />
               </div>
               <div className="section-row">
                 <p>
                   <span>Pressure:</span>
-                  <strong>{currentForecast.pressure ?? "Information not found"}</strong>
+                  <strong>{currentForecast.pressure ?? "Unknown"}</strong>
                 </p>
                 <Pressure color="var(--font-color)" background="var(--background)" />
               </div>
               <div className="section-row">
                 <p>
                   <span>Wind:</span>
-                  <strong>{currentForecast.wind ?? "Information not found"}</strong>
+                  <strong>{currentForecast.wind ?? "Unknown"}</strong>
                 </p>
                 <Wind />
               </div>
