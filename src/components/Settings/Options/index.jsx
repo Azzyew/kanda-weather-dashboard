@@ -1,5 +1,6 @@
 import Select from "react-select"
 import i18next from "i18next"
+import { useTranslation } from 'react-i18next'
 import { useSettings } from "../../../contexts/settingsContext"
 
 import OptionsContainer from "./style"
@@ -11,6 +12,7 @@ import {
 } from '../../SelectInput/style'
 
 export function Options() {
+  const { t } = useTranslation()
   const {
     temperatureOptions,
     defaultTemperatureUnity,
@@ -33,7 +35,7 @@ export function Options() {
 
   return (
     <OptionsContainer>
-      <p>Select default temperature unity:</p>
+      <p>{t('Select default temperature unity')}:</p>
       <Select value={defaultTemperatureUnity} options={temperatureOptions}
             isSearchable={false} onChange={e => configureDefaultTemperature(e)}
             styles={{
@@ -44,7 +46,7 @@ export function Options() {
             }}
         />
         
-      <p>Select default language:</p>
+      <p>{t('Select default language')}:</p>
       <Select value={defaultLanguage} options={languageOptions}
             isSearchable={false} onChange={e => configureDefaultLanguage(e)}
             styles={{

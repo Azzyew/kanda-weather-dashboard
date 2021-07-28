@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Select from 'react-select'
+import { useTranslation } from 'react-i18next'
 import { useForecasts } from '../../contexts/forecastsContext'
 import {
     controlStyles,
@@ -10,6 +11,7 @@ import {
 } from './style'
 
 export function SelectInput({ type, isDisabled }) {
+    const { t } = useTranslation()
     const { getAvailableForecastsOptions, currentRegion, setCurrentRegion, selectForecast } = useForecasts()
     const [options, setOptions] = useState([])
     const [value, setValue] = useState(null)
@@ -51,7 +53,7 @@ export function SelectInput({ type, isDisabled }) {
     }
 
     return (
-        <Select placeholder={`Select a ${type}`} onChange={e => setValues(e)}
+        <Select placeholder={t(`Select a ${type}`)} onChange={e => setValues(e)}
             options={options} isDisabled={isDisabled} value={value} isClearable
             styles={{
                 control: controlStyles,

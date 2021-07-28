@@ -1,5 +1,22 @@
 {
     "translation": {
-        "Chance of rain": "Chance de chuva"
+        "Select a region": "Selecione uma região",
+        "Select a date": "Selecione uma data",
+
+        "Chance of rain": "Chance de chuva",
+        "Cloudy": "Nublado",
+        "Partly Cloudy": "Parcialmente Nublado",
+        "Sunny": "Ensolarado",
+
+        "Humidity": "Umidade",
+        "Pressure": "Pressão",
+        "Wind": "Vento",
+        "Soil Moisture": "Umidade do Solo",
+        "High flood risk": "Alto risco de inundação",
+        "Low flood risk": "Baixo risco de inundação",
+
+        "Settings": "Configurações",
+        "Select default temperature unity": "Selecione a unidade de temperatura padrão",
+        "Select default language": "Selecione a linguagem padrão"
     }
 }
