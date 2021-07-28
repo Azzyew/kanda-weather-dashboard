@@ -37,7 +37,7 @@ export default function App() {
             region={currentForecast.region}
             date={currentForecast.date}
             condition={currentForecast.condition}
-            temperature={currentForecast.temperature}
+            temperature={parseFloat(currentForecast.temperature)}
             rainChance={currentForecast.rainChance ?? 'Unknown'}
           />
           <div>
