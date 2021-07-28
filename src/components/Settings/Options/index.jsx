@@ -7,19 +7,27 @@ import {
   valueStyles,
   menuStyles
 } from '../../SelectInput/style'
+import { useSettings } from "../../../contexts/settingsContext"
 
 export function Options() {
-  const [temperatureUnity, setTemperatureUnity] = useState({ value: "C", label: "Celsius" })
-  const temperatureOptions = [
-    { value: "C", label: "Celsius" },
-    { value: "F", label: "Fahrenheit" }
-  ]
+  const {
+    defaultTemperatureUnity,
+    setDefaultTemperatureUnity,
+    temperatureOptions
+  } = useSettings()
+  
+  const [temperatureUnity, setTemperatureUnity] = useState(defaultTemperatureUnity)
+
+  function setDefaultTemperature(e) {
+    setTemperatureUnity(e)
+    setDefaultTemperatureUnity(e)
+  }
 
   return (
     <OptionsContainer>
       <p>Select default temperature unity:</p>
       <Select value={temperatureUnity} options={temperatureOptions}
-            isSearchable={false} onChange={e => setTemperatureUnity(e)}
+            isSearchable={false} onChange={e => setDefaultTemperature(e)}
             styles={{
                 control: controlStyles,
                 menu: menuStyles,
