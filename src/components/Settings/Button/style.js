@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const StyledSettingsButton = styled.button`
   font-size: 0;
@@ -6,7 +6,14 @@ const StyledSettingsButton = styled.button`
   svg {
     width: 2rem;
     height: 2rem;
+    transition: .2s;
   }
-`;
 
-export default StyledSettingsButton;
+  &:hover {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+`
+
+export default StyledSettingsButton

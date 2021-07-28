@@ -15,8 +15,15 @@ const SettingsContainer = styled.div`
     svg {
       width: 2.5rem;
       height: 2.5rem;
+      transition: .2s;
       position: absolute;
       right: 0;
+    }
+
+    &:hover {
+      svg {
+        transform: rotate(90deg);
+      }
     }
   }
   
@@ -36,6 +43,7 @@ export const ModalStyles = {
   },
   content: {
     padding: "3rem",
+    borderRadius: "8px",
     border: '1px solid var(--border-color)',
     background: "var(--background)",
   },
