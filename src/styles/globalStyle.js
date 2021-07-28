@@ -65,8 +65,14 @@ const GlobalStyle = createGlobalStyle`
   /* mobile */
 
   @media(max-width: 1080px) {
-    header form {
-      gap: 1rem !important;
+    header {
+      form {
+        gap: 1rem !important;
+      }
+
+      > div {
+        gap: .75rem !important;
+      }
     }
 
     main {
@@ -97,9 +103,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media(max-width: 600px) {
+    #root > div {
+      padding-top: 3vh;
+    }
+
     header {
       gap: 1rem;
       flex-direction: column-reverse;
+
+      > div {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
     }
 
     main {

@@ -9,7 +9,7 @@ const StyledToggleThemeButton = styled.button`
     width: 4rem;
     height: 2rem;
 
-    padding: 0 0.25rem 0 0.4rem;
+    padding: 0 5px 0 7px;
     border-radius: 25px;
     border: 1px solid var(--border-color);
     background: var(--background);
