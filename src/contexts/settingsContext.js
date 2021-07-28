@@ -13,7 +13,14 @@ export function SettingsContextProvider({ children }) {
         setDefaultTemperatureUnity
     ] = useState(() => {
         const storagedUnity = localStorage.getItem('defaultTemperatureUnity')
-        return (storagedUnity ?? temperatureOptions[0])
+        
+        const defaultUnity = temperatureOptions.filter(option => {
+            if (option.value === storagedUnity) {
+                return storagedUnity
+            } else return null
+        })
+
+        return (defaultUnity[0] ?? temperatureOptions[0])
     })
 
     return (
