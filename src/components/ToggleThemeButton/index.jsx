@@ -8,7 +8,7 @@ export function ToggleThemeButton({ currentTheme, onClick }) {
             className={`toggle-theme ${currentTheme}`}
         >
             <div className="button-bg">
-                <div class="animate-toggle" />
+                <div className="animate-toggle" />
                 {currentTheme === 'dark' ? <DarkMode /> : <LightMode />}
             </div>
         </StyledToggleThemeButton>
