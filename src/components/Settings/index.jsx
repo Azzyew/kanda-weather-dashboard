@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useTranslation } from 'react-i18next'
 import { SettingsButton } from "./Button"
 import { Close } from "../../svg/icons/Close"
 import { Options } from "./Options"
@@ -10,6 +11,7 @@ import Modal from "react-modal"
 Modal.setAppElement("#root")
 
 export function Settings() {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -27,7 +29,7 @@ export function Settings() {
             <Close />
           </button>
 
-          <h1>Settings</h1>
+          <h1>{t('Settings')}</h1>
 
           <Options />
         </SettingsContainer>

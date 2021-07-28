@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { useForecasts } from './contexts/forecastsContext'
 import { Settings } from './components/Settings'
 
@@ -17,6 +18,7 @@ import GlobalStyle from './styles/globalStyle'
 import StyledApp from './styles/appStyle'
 
 export default function App() {
+  const { t } = useTranslation()
   const { currentForecast, currentRegion } = useForecasts()
   const { themes, currentTheme, toggleCurrentTheme } = useTheme()
 
@@ -48,21 +50,21 @@ export default function App() {
             <section>
               <div className="section-row">
                 <p>
-                  <span>Humidity:</span>
+                  <span>{t('Humidity')}:</span>
                   <strong>{currentForecast.humidity ?? "Unknown"}</strong>
                 </p>
                 <Humidity />
               </div>
               <div className="section-row">
                 <p>
-                  <span>Pressure:</span>
+                  <span>{t('Pressure')}:</span>
                   <strong>{currentForecast.pressure ?? "Unknown"}</strong>
                 </p>
                 <Pressure color="var(--font-color)" background="var(--background)" />
               </div>
               <div className="section-row">
                 <p>
-                  <span>Wind:</span>
+                  <span>{t('Wind')}:</span>
                   <strong>{currentForecast.wind ?? "Unknown"}</strong>
                 </p>
                 <Wind />
@@ -72,7 +74,7 @@ export default function App() {
             <section>
               <div className="section-row">
                 <p>
-                  <span>Soil Moisture:</span>
+                  <span>{t('Soil Moisture')}:</span>
                   <strong>10 cm</strong>
                 </p>
                 <SoilMoisture color="var(--font-color)" />
