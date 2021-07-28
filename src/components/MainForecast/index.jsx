@@ -11,9 +11,13 @@ import { MiniRain } from '../../svg/icons/MiniRain'
 
 import StyledMainForecast from './style.js'
 
+import { useTranslation } from 'react-i18next'
+
 export function MainForecast({ region, date, condition, temperature, rainChance }) {
   const { defaultTemperatureUnity } = useSettings()
   const [temperatureValue, setTemperatureValue] = useState(temperature)
+
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (defaultTemperatureUnity.value === 'F') {
@@ -44,7 +48,7 @@ export function MainForecast({ region, date, condition, temperature, rainChance 
         ) : <TempHigh color="var(--font-color)" />
         }
       </span>
-      <span>Chance of rain: <strong>{rainChance}</strong> <MiniRain /></span>
+      <span>{t('Chance of rain')}: <strong>{rainChance}</strong> <MiniRain /></span>
     </StyledMainForecast>
   )
 }

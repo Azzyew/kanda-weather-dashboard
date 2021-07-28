@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import { SettingsContextProvider } from './contexts/settingsContext'
 import { ForecastsContextProvider } from './contexts/forecastsContext'
+import './translate'
 
 ReactDOM.render(
   <React.StrictMode>
