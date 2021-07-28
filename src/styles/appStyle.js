@@ -28,7 +28,7 @@ const StyledApp = styled.div`
 
     > div {
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
     }
   }
 
