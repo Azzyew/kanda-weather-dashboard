@@ -1,4 +1,4 @@
-import { useForecasts } from './data/forecastsContext'
+import { useForecasts } from './contexts/forecastsContext'
 
 import { SoilMoisture } from './svg/icons/SoilMoisture'
 import { Humidity } from './svg/icons/Humidity'

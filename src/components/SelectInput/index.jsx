@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Select from 'react-select'
-import { useForecasts } from '../../data/forecastsContext'
+import { useForecasts } from '../../contexts/forecastsContext'
 import {
     controlStyles,
     optionStyles,

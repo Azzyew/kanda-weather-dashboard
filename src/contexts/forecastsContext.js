@@ -1,5 +1,5 @@
 import { useState, createContext, useContext } from "react"
-import { forecasts } from './forecasts'
+import { forecasts } from '../data/forecasts'
 
 export const ForecastsContext = createContext({})
 
