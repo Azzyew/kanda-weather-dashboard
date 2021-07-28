@@ -19,6 +19,10 @@ const SettingsContainer = styled.div`
       right: 0;
     }
   }
+  
+  h1 {
+    margin-bottom: 2rem;
+  }
 `
 
 export default SettingsContainer

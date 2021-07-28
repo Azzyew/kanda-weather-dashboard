@@ -1,4 +1,5 @@
 import { useState, createContext, useContext } from "react"
+import i18next from "i18next"
 
 export const SettingsContext = createContext({})
 
@@ -16,18 +17,42 @@ export function SettingsContextProvider({ children }) {
         
         const defaultUnity = temperatureOptions.filter(option => {
             if (option.value === storagedUnity) {
-                return storagedUnity
-            } else return null
+                return true
+            } else return false
         })
 
         return (defaultUnity[0] ?? temperatureOptions[0])
     })
+    
+    const languageOptions = [
+        { value: "en-US", label: "English" },
+        { value: "pt-BR", label: "Português" }
+    ]
+
+    const [
+        defaultLanguage,
+        setDefaultLanguage
+    ] = useState(() => {
+        const storagedLanguage = localStorage.getItem('defaultLanguage')
+        
+        const defaultLanguage = languageOptions.filter(option => {
+            if (option.value === storagedLanguage) {
+                i18next.changeLanguage(option.value)
+                return true
+            } else return false
+        })
+
+        return (defaultLanguage[0] ?? languageOptions[0])
+    })
 
     return (
         <SettingsContext.Provider value={{
+            temperatureOptions,
             defaultTemperatureUnity,
             setDefaultTemperatureUnity,
-            temperatureOptions
+            languageOptions,
+            defaultLanguage,
+            setDefaultLanguage
         }}>
             {children}
         </SettingsContext.Provider>
