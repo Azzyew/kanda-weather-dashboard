@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next'
 import { useForecasts } from './contexts/forecastsContext'
 import { Settings } from './components/Settings'
 
+import bodyBackground from './svg/images/bodyBG-dark.jpg'
+import bodyBackgroundLight from './svg/images/bodyBG-light.jpeg'
 import { SoilMoisture } from './svg/icons/SoilMoisture'
 import { Humidity } from './svg/icons/Humidity'
 import { Pressure } from './svg/icons/Pressure'
@@ -25,7 +27,15 @@ export default function App() {
   return (
     <ThemeProvider theme={currentTheme === 'light' ? themes.light : themes.dark}>
       <GlobalStyle />
-      <StyledApp>
+      <StyledApp style={{
+        backgroundImage: currentTheme === 'dark' ? (
+          `url('${bodyBackground}')`
+        ) : (
+          `url('${bodyBackgroundLight}')`
+        ),
+        backgroundRepeat: 'no-repeat' ,
+        backgroundSize: 'cover'
+      }}>
         <header>
           <form>
             <SelectInput type="region" />
