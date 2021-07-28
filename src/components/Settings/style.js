@@ -26,13 +26,13 @@ export default SettingsContainer
 
 export const ModalStyles = {
   overlay: {
-    background: "var(--bodyBackground)",
+    background: "var(--body-background)",
     transition: "opacity .2s",
     opacity: 0,
   },
   content: {
     padding: "3rem",
-    border: 0,
+    border: '1px solid var(--border-color)',
     background: "var(--background)",
   },
 }
