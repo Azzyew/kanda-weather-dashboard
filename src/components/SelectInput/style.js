@@ -1,6 +1,7 @@
 export const controlStyles = (styles, { isDisabled }) => ({
     ...styles,
     width: '250px',
+    color: 'var(--font-color)',
     background: 'var(--background)',
     border: '1px solid var(--border-color)',
     opacity: isDisabled ? .6 : 1,
@@ -32,6 +33,11 @@ export const optionStyles = styles => ({
 })
 
 export const valueStyles = styles => ({
+    ...styles,
+    color: 'var(--font-color)',
+})
+
+export const inputStyles = styles => ({
     ...styles,
     color: 'var(--font-color)',
 })

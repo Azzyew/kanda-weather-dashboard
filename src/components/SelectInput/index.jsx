@@ -5,6 +5,7 @@ import {
     controlStyles,
     optionStyles,
     valueStyles,
+    inputStyles,
     menuStyles
 } from './style'
 
@@ -50,13 +51,14 @@ export function SelectInput({ type, isDisabled }) {
     }
 
     return (
-        <Select placeholder={`Select a ${type}`} isClearable onChange={e => setValues(e)}
-            isSearchable={false} options={options} isDisabled={isDisabled} value={value}
+        <Select placeholder={`Select a ${type}`} onChange={e => setValues(e)}
+            options={options} isDisabled={isDisabled} value={value} isClearable
             styles={{
                 control: controlStyles,
                 menu: menuStyles,
                 option: optionStyles,
-                singleValue: valueStyles
+                singleValue: valueStyles,
+                input: inputStyles,
             }}
         />
     )
