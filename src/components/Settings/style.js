@@ -19,13 +19,6 @@ const SettingsContainer = styled.div`
       right: 0;
     }
   }
-
-  .options {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
 `
 
 export default SettingsContainer
