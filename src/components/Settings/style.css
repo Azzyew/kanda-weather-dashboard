@@ -1,0 +1,10 @@
+/* necessário pra animação funcionar */
+/* não consegui ainda botar in-js */
+
+.ReactModal__Overlay--after-open {
+    opacity: 1 !important;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0 !important;
+}
