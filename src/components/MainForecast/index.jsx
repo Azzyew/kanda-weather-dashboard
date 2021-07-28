@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { temperatures } from '../../utils/temperatureConfig'
 import { celsiusToFahrenheit } from '../../utils/celsiusToFahrenheit'
+import { useSettings } from '../../contexts/settingsContext'
 
 import { Cloudy } from '../../svg/images/Cloudy'
 import { PartlyCloudy } from '../../svg/images/PartlyCloudy'
@@ -11,20 +12,17 @@ import { MiniRain } from '../../svg/icons/MiniRain'
 import StyledMainForecast from './style.js'
 
 export function MainForecast({ region, date, condition, temperature, rainChance }) {
+  const { defaultTemperatureUnity } = useSettings()
   const [temperatureValue, setTemperatureValue] = useState(temperature)
-  const [temperatureUnity] = useState(() => {
-    const storagedUnity = localStorage.getItem('temperatureUnity')
-    return (storagedUnity ?? 'C')
-  })
 
   useEffect(() => {
-    if (temperatureUnity === 'F') {
+    if (defaultTemperatureUnity.value === 'F') {
       const tempInFahrenheit = celsiusToFahrenheit(temperature)
       setTemperatureValue(tempInFahrenheit)
     } else {
       setTemperatureValue(temperature)
     }
-  }, [temperature, temperatureUnity])
+  }, [temperature, defaultTemperatureUnity])
 
   return (
     <StyledMainForecast className="main-forecast">
@@ -38,7 +36,7 @@ export function MainForecast({ region, date, condition, temperature, rainChance 
         <Sunny className="forecast-illustration" />
       ) : ''}
 
-      <span className="condition">{condition}, <strong>{temperatureValue}° {temperatureUnity}</strong>
+      <span className="condition">{condition}, <strong>{temperatureValue}° {defaultTemperatureUnity.value}</strong>
         {temperature < temperatures.cold ? (
           <TempLow color="var(--font-color)" />
         ) : temperature < temperatures.hot ? (

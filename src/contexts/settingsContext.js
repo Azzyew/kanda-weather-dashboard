@@ -11,7 +11,10 @@ export function SettingsContextProvider({ children }) {
     const [
         defaultTemperatureUnity,
         setDefaultTemperatureUnity
-    ] = useState(temperatureOptions[0])
+    ] = useState(() => {
+        const storagedUnity = localStorage.getItem('defaultTemperatureUnity')
+        return (storagedUnity ?? temperatureOptions[0])
+    })
 
     return (
         <SettingsContext.Provider value={{

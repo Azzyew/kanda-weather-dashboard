@@ -21,6 +21,7 @@ export function Options() {
   function setDefaultTemperature(e) {
     setTemperatureUnity(e)
     setDefaultTemperatureUnity(e)
+    localStorage.setItem('defaultTemperatureUnity', e)
   }
 
   return (
