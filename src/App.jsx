@@ -1,4 +1,5 @@
 import { useForecasts } from './contexts/forecastsContext'
+import { Settings } from './components/Settings'
 
 import { SoilMoisture } from './svg/icons/SoilMoisture'
 import { Humidity } from './svg/icons/Humidity'
@@ -29,7 +30,10 @@ export default function App() {
             <SelectInput type="date" isDisabled={!currentRegion} />
           </form>
 
-          <ToggleThemeButton currentTheme={currentTheme} onClick={toggleCurrentTheme} />
+          <div>
+            <ToggleThemeButton currentTheme={currentTheme} onClick={toggleCurrentTheme} />
+            <Settings />
+          </div>
         </header>
 
         <main>

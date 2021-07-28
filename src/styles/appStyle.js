@@ -25,6 +25,11 @@ const StyledApp = styled.div`
         border-radius: 5px;
       }
     }
+
+    > div {
+      display: flex;
+      gap: 1.5rem;
+    }
   }
 
   main {
