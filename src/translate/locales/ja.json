@@ -1,0 +1,27 @@
+{
+    "translation": {
+        "Select a region": "地域を選択してください",
+        "Select a date": "日付を選択してください",
+        "Toggle Theme": "テーマを切り替える",
+
+        "Chance of rain": "雨の可能性",
+        "Cloudy": "曇り",
+        "Partly Cloudy": "晴れときどき曇り",
+        "Sunny": "晴れ",
+
+        "Humidity": "湿度",
+        "Pressure": "プレッシャー",
+        "Wind": "風",
+        "Unknown": "わからない",
+        
+        "Soil Moisture": "土壌水分",
+        "High flood risk": "高い洪水リスク",
+        "Low flood risk": "洪水リスクが低い",
+
+        "Settings": "設定",
+        "Open Settings": "設定を開く",
+        "Close Settings": "設定を閉じる",
+        "Select default temperature unity": "デフォルトの温度単位を選択します",
+        "Select default language": "デフォルトの言語を選択する"
+    }
+}
