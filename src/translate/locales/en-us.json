@@ -11,6 +11,8 @@
         "Humidity": "Humidity",
         "Pressure": "Pressure",
         "Wind": "Wind",
+        "Unknown": "Unknown",
+        
         "Soil Moisture": "Soil Moisture",
         "High flood risk": "High flood risk",
         "Low flood risk": "Low flood risk",

@@ -44,28 +44,28 @@ export default function App() {
             date={currentForecast.date}
             condition={currentForecast.condition}
             temperature={parseFloat(currentForecast.temperature)}
-            rainChance={currentForecast.rainChance ?? 'Unknown'}
+            rainChance={currentForecast.rainChance ?? t('Unknown')}
           />
           <div>
             <section>
               <div className="section-row">
                 <p>
                   <span>{t('Humidity')}:</span>
-                  <strong>{currentForecast.humidity ?? "Unknown"}</strong>
+                  <strong>{currentForecast.humidity ?? t('Unknown')}</strong>
                 </p>
                 <Humidity />
               </div>
               <div className="section-row">
                 <p>
                   <span>{t('Pressure')}:</span>
-                  <strong>{currentForecast.pressure ?? "Unknown"}</strong>
+                  <strong>{currentForecast.pressure ?? t('Unknown')}</strong>
                 </p>
                 <Pressure color="var(--font-color)" background="var(--background)" />
               </div>
               <div className="section-row">
                 <p>
                   <span>{t('Wind')}:</span>
-                  <strong>{currentForecast.wind ?? "Unknown"}</strong>
+                  <strong>{currentForecast.wind ?? t('Unknown')}</strong>
                 </p>
                 <Wind />
               </div>

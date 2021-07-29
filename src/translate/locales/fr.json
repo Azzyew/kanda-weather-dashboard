@@ -11,6 +11,8 @@
         "Humidity": "Humidité",
         "Pressure": "Pression",
         "Wind": "Vent",
+        "Unknown": "Inconnu",
+
         "Soil Moisture": "Humidité du sol",
         "High flood risk": "Risque élevé d'inondation",
         "Low flood risk": "Faible risque d'inondation",
