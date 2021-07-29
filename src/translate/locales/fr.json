@@ -5,18 +5,18 @@
 
         "Chance of rain": "Risque de pluie",
         "Cloudy": "Nuageux",
-        "Partly Cloudy": "Partiellement nuageux",
-        "Sunny": "Sunny",
+        "Partly Cloudy": "Partiellement Nuageux",
+        "Sunny": "Ensoleillé",
 
-        "Humidity": "Humidity",
-        "Pressure": "Pressure",
-        "Wind": "Wind",
-        "Soil Moisture": "Soil Moisture",
-        "High flood risk": "High flood risk",
-        "Low flood risk": "Low flood risk",
+        "Humidity": "Humidité",
+        "Pressure": "Pression",
+        "Wind": "Vent",
+        "Soil Moisture": "Humidité du sol",
+        "High flood risk": "Risque élevé d'inondation",
+        "Low flood risk": "Faible risque d'inondation",
 
-        "Settings": "Settings",
-        "Select default temperature unity": "Select default temperature unity",
-        "Select default language": "Select default language"
+        "Settings": "Paramètres",
+        "Select default temperature unity": "Sélectionnez l'unité de température par défaut",
+        "Select default language": "Sélectionnez la langue par défaut"
     }
 }
