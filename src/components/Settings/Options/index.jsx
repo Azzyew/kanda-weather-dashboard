@@ -35,29 +35,33 @@ export function Options() {
 
   return (
     <OptionsContainer>
-      <p>{t('Select default temperature unity')}:</p>
-      <Select value={defaultTemperatureUnity} options={temperatureOptions}
-            isSearchable={false} onChange={e => configureDefaultTemperature(e)}
-            aria-label={t('Select default temperature unity')}
-            styles={{
-                control: controlStyles,
-                menu: menuStyles,
-                option: optionStyles,
-                singleValue: valueStyles,
-            }}
-        />
+      <div>
+        <p>{t('Select default temperature unity')}:</p>
+        <Select value={defaultTemperatureUnity} options={temperatureOptions}
+              isSearchable={false} onChange={e => configureDefaultTemperature(e)}
+              aria-label={t('Select default temperature unity')}
+              styles={{
+                  control: controlStyles,
+                  menu: menuStyles,
+                  option: optionStyles,
+                  singleValue: valueStyles,
+              }}
+          />
+      </div>
         
-      <p>{t('Select default language')}:</p>
-      <Select value={defaultLanguage} options={languageOptions}
-            isSearchable={false} onChange={e => configureDefaultLanguage(e)}
-            aria-label={t('Select default language')}
-            styles={{
-                control: controlStyles,
-                menu: menuStyles,
-                option: optionStyles,
-                singleValue: valueStyles,
-            }}
-        />
+      <div>
+        <p>{t('Select default language')}:</p>
+        <Select value={defaultLanguage} options={languageOptions}
+              isSearchable={false} onChange={e => configureDefaultLanguage(e)}
+              aria-label={t('Select default language')}
+              styles={{
+                  control: controlStyles,
+                  menu: menuStyles,
+                  option: optionStyles,
+                  singleValue: valueStyles,
+              }}
+          />
+      </div>
     </OptionsContainer>
   )
 }

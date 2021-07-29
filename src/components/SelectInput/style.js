@@ -7,10 +7,10 @@ export const controlStyles = (styles, { isDisabled }) => ({
     opacity: isDisabled ? .6 : 1,
     cursor: 'pointer',
     '@media(max-width: 768px)': {
-        width: '35vw'
+        width: '42.5vw'
     },
-    '@media(max-width: 600px)': {
-        width: '43vw'
+    '@media(max-width: 450px)': {
+        width: '100%'
     }
 })
 

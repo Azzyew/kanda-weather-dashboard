@@ -12,14 +12,16 @@ const StyledMainForecast = styled.div`
     }
 
     .condition {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
-    span {
+    div {
         display: flex;
         align-items: center;
 
         strong {
+            display: flex;
+            align-items: center;
             margin-left: .5rem;
         }
 

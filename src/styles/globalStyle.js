@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --border-color: ${props => props.theme.borderColor};
     --gray: #A4A4A4;
     --soft-red: #FFCECE;
-    --soft-green: #BCFFB1
+    --soft-green: #D3FFCB;
   }
 
   * {
@@ -17,12 +17,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body {
-    height: 100vh;
-  }
-
   body {
+    height: 100vh;
+    background: var(--body-background);
     font-family: 'Open Sans', sans-serif;
+    color: var(--font-color);
     transition: all .2s;
   }
 
@@ -30,23 +29,18 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Rubik', sans-serif;
   }
 
-  input, span, label, button, p {
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  h1, h2, h3, h4, h5, h6, span, input, label, button, p {
-    color: var(--font-color);
-  }
-
-  button, a {
+  button {
+    all: unset;
     cursor: pointer;
-    background: none;
-    text-decoration: none;
-    border: none;
+    font-size: 0;
   }
 
-  body {
-    background: var(--body-background);
+  .ReactModal__Overlay--after-open {
+    opacity: 1 !important;
+  }
+
+  .ReactModal__Overlay--before-close {
+      opacity: 0 !important;
   }
 
   /* responsive fonts */
@@ -61,73 +55,6 @@ const GlobalStyle = createGlobalStyle`
         font-size: 87.5%;
     }
   }
+`
 
-  /* mobile */
-
-  @media(max-width: 1080px) {
-    header {
-      form {
-        gap: 1rem !important;
-      }
-
-      > div {
-        gap: .75rem !important;
-      }
-    }
-
-    main {
-      gap: 1.5rem !important;
-
-      div {
-        font-size: 1rem !important;
-      }
-
-      .main-forecast, section {
-        padding: 1rem !important;
-      }
-
-      .main-forecast {
-        > svg {
-          margin: 1rem 0;
-        }
-
-        .condition {
-          font-size: 1.5rem;
-        }
-      }
-    }
-
-    .section-row {
-      gap: .75rem !important;
-    }
-  }
-
-  @media(max-width: 600px) {
-    #root > div {
-      padding-top: 3vh;
-    }
-
-    header {
-      gap: 1rem;
-      flex-direction: column-reverse;
-
-      > div {
-        width: 100%;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-      }
-    }
-
-    main {
-      gap: 2rem !important;
-      padding-bottom: 3rem;
-      flex-direction: column;
-
-      .main-forecast {
-        padding: 2rem 1rem !important;
-      }
-    }
-  }
-`;
-
-export default GlobalStyle;
+export default GlobalStyle

@@ -6,6 +6,11 @@ const OptionsContainer = styled.div`
     align-items: center;
     flex-direction: column;
 
+    > div {
+        width: 100%;
+        text-align: left;
+    }
+    
     p {
         margin: 4rem 0 .75rem;
     }

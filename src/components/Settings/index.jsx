@@ -5,7 +5,6 @@ import { Close } from "../../svg/icons/Close"
 import { Options } from "./Options"
 
 import SettingsContainer, { ModalStyles } from "./style"
-import "./style.css"
 
 import Modal from "react-modal"
 Modal.setAppElement("#root")
@@ -24,7 +23,7 @@ export function Settings() {
         closeTimeoutMS={200}
         style={ ModalStyles }
       >
-        <SettingsContainer>
+        <SettingsContainer className="settings-container">
           <button
             name={t('Close Settings')}
             aria-label={t('Close Settings')}

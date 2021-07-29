@@ -7,11 +7,11 @@ export function FloodRisk({ risk = false }) {
     const { t } = useTranslation()
 
     return (
-        <StyledFloodRisk className={!risk ? 'green' : ''}>
+        <StyledFloodRisk className={risk ? 'flood-risk red' : 'flood-risk'}>
             {risk ? (
-                <> <Danger /> {t('High flood risk')} </>
+                <> <Danger /> <span>{t('High flood risk')}</span> </>
             ) : (
-                <> <Check /> {t('Low flood risk')} </>
+                <> <Check /> <span>{t('Low flood risk')}</span> </>
             )}
         </StyledFloodRisk>
     )

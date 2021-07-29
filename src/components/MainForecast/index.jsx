@@ -38,15 +38,19 @@ export function MainForecast({ region, date, condition, temperature, rainChance 
         <Sunny className="forecast-illustration" />
       ) : ''}
 
-      <span className="condition">{t(condition)}, <strong>{temperatureValue}° {defaultTemperatureUnity.value}</strong>
-        {temperature < temperatures.cold ? (
-          <TempLow color="var(--font-color)" />
-        ) : temperature < temperatures.hot ? (
-          <TempMedium color="var(--font-color)" />
-        ) : <TempHigh color="var(--font-color)" />
-        }
-      </span>
-      <span>{t('Chance of rain')}: <strong>{rainChance}</strong> <MiniRain /></span>
+      <div className="condition">
+        <span>{t(condition)}</span><span className="comma">,</span>
+        <strong>
+          {temperatureValue}° {defaultTemperatureUnity.value}
+          {temperature < temperatures.cold ? (
+            <TempLow color="var(--font-color)" />
+          ) : temperature < temperatures.hot ? (
+            <TempMedium color="var(--font-color)" />
+          ) : <TempHigh color="var(--font-color)" />
+          }
+        </strong>
+      </div>
+      <div> <span>{t('Chance of rain')}:</span> <strong>{rainChance}</strong> <MiniRain /></div>
     </StyledMainForecast>
   )
 }
