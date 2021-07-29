@@ -53,8 +53,10 @@ export function SelectInput({ type, isDisabled }) {
     }
 
     return (
-        <Select placeholder={t(`Select a ${type}`)} onChange={e => setValues(e)}
-            options={options} isDisabled={isDisabled} value={value} isClearable
+        <Select options={options} onChange={e => setValues(e)} 
+            isDisabled={isDisabled} value={value} isClearable
+            placeholder={t(`Select a ${type}`)}
+            aria-label={t(`Select a ${type}`)}
             styles={{
                 control: controlStyles,
                 menu: menuStyles,

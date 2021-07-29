@@ -25,7 +25,11 @@ export function Settings() {
         style={ ModalStyles }
       >
         <SettingsContainer>
-          <button onClick={() => setIsOpen(false)}>
+          <button
+            name={t('Close Settings')}
+            aria-label={t('Close Settings')}
+            onClick={() => setIsOpen(false)}
+          >
             <Close />
           </button>
 

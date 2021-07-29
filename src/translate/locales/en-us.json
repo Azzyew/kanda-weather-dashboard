@@ -2,6 +2,7 @@
     "translation": {
         "Select a region": "Select a region",
         "Select a date": "Select a date",
+        "Toggle Theme": "Toggle Theme",
 
         "Chance of rain": "Chance of rain",
         "Cloudy": "Cloudy",
@@ -18,6 +19,8 @@
         "Low flood risk": "Low flood risk",
 
         "Settings": "Settings",
+        "Open Settings": "Open Settings",
+        "Close Settings": "Close Settings",
         "Select default temperature unity": "Select default temperature unity",
         "Select default language": "Select default language"
     }

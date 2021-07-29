@@ -11,13 +11,13 @@ const SettingsContainer = styled.div`
 
   > button {
     font-size: 0;
+    position: absolute;
+    right: 0;
 
     svg {
       width: 2.5rem;
       height: 2.5rem;
       transition: .2s;
-      position: absolute;
-      right: 0;
     }
 
     &:hover {

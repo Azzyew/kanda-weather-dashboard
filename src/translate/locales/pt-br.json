@@ -2,6 +2,7 @@
     "translation": {
         "Select a region": "Selecione uma região",
         "Select a date": "Selecione uma data",
+        "Toggle Theme": "Alterar Tema",
 
         "Chance of rain": "Chance de chuva",
         "Cloudy": "Nublado",
@@ -18,6 +19,8 @@
         "Low flood risk": "Baixo risco de inundação",
 
         "Settings": "Configurações",
+        "Open Settings": "Abrir Configurações",
+        "Close Settings": "Fechar Configurações",
         "Select default temperature unity": "Selecione a unidade de temperatura padrão",
         "Select default language": "Selecione a linguagem padrão"
     }

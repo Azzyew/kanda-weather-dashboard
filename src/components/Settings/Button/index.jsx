@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next'
 import StyledSettingsButton from './style'
 
 export function SettingsButton({ onClick }) {
+  const { t } = useTranslation()
+
   return (
-    <StyledSettingsButton onClick={onClick}>
+    <StyledSettingsButton onClick={onClick} name={t('Open Settings')} aria-label={t('Open Settings')}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         enableBackground="new 0 0 24 24"
