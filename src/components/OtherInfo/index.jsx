@@ -1,22 +1,14 @@
-import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { Humidity } from '../../svg/icons/Humidity'
 import { Pressure } from '../../svg/icons/Pressure'
 import { Wind } from '../../svg/icons/Wind'
-import { SoilMoisture } from '../../svg/icons/SoilMoisture'
-
-import { FloodRisk } from './FloodRisk'
+import { SoilMoistureContainer } from './SoilMoistureContainer'
 
 import StyledContainer from './style'
 
 export function OtherInfo({ humidity, pressure, wind, soilMoisture }) {
   const { t } = useTranslation()
-  const [floodRisk, setFloodRisk] = useState()
-
-  useEffect(() => {
-    setFloodRisk(parseFloat(soilMoisture) > 10)
-  }, [soilMoisture])
 
   return (
     <StyledContainer>
@@ -44,17 +36,7 @@ export function OtherInfo({ humidity, pressure, wind, soilMoisture }) {
             </div>
       </section>
 
-      <section>
-        <div className="section-row">
-          <p>
-            <span>{t('Soil Moisture')}:</span>
-            <strong>{soilMoisture}</strong>
-          </p>
-          <SoilMoisture color="var(--font-color)" />
-        </div>
-
-        <FloodRisk risk={floodRisk} />
-      </section>
+      <SoilMoistureContainer soilMoisture={soilMoisture} />
     </StyledContainer>
   )
 }
