@@ -17,7 +17,7 @@ export const useTheme = () => {
 
     const themes = {
         light: {
-            bodyBackground: '#E5E5E5',
+            bodyBackground: '#ddd',
             background: '#F5F5F5',
             fontColor: '#444444',
             borderColor: '#C4C4C4'
