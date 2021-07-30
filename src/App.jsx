@@ -46,10 +46,11 @@ export default function App() {
           />
           
           <OtherInfo
+            region={currentForecast.region}
+            date={currentForecast.date}
             humidity={currentForecast.humidity}
             pressure={currentForecast.pressure}
             wind={currentForecast.wind}
-            soilMoisture="9 cm"
           />
         </main>
       </StyledApp>
