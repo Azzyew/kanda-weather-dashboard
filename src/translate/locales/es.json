@@ -1,12 +1,12 @@
 {
     "translation": {
         "Select a region": "Seleccione una región",
-        "Select a date": "Seleccionar una fecha",
+        "Select a date": "Seleccione una fecha",
         "Toggle Theme": "Alternar tema",
 
-        "Chance of rain": "probabilidad de lluvia",
+        "Chance of rain": "Probabilidad de Lluvia",
         "Cloudy": "Nublado",
-        "Partly Cloudy": "Parcialmente nublado",
+        "Partly Cloudy": "Parcialmente Nublado",
         "Sunny": "Soleado",
 
         "Humidity": "Humedad",
@@ -14,14 +14,14 @@
         "Wind": "Viento",
         "Unknown": "Desconocida",
         
-        "Soil Moisture": "Humedad del suelo",
+        "Soil Moisture": "Humedad del Suelo",
         "High flood risk": "Alto riesgo de inundación",
         "Low flood risk": "Bajo riesgo de inundación",
 
         "Settings": "Ajustes",
-        "Open Settings": "Abrir ajustes",
-        "Close Settings": "Cerrar ajustes",
-        "Select default temperature unity": "Seleccione la unidad de temperatura predeterminada",
+        "Open Settings": "Abrir Ajustes",
+        "Close Settings": "Cerrar Ajustes",
+        "Select default temperature unity": "Seleccionar la unidad de temperatura predeterminada",
         "Select default language": "Seleccionar idioma predeterminado"
     }
 }
