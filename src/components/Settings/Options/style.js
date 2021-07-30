@@ -8,7 +8,6 @@ const OptionsContainer = styled.div`
 
     > div {
         width: 100%;
-        text-align: left;
     }
     
     p {
@@ -16,3 +15,11 @@ const OptionsContainer = styled.div`
     }
 `
 export default OptionsContainer
+
+export const controlStyles = styles => ({
+    ...styles,
+    color: 'var(--font-color)',
+    background: 'var(--background)',
+    border: '1px solid var(--border-color)',
+    cursor: 'pointer'
+})
