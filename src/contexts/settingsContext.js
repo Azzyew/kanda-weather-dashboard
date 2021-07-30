@@ -27,7 +27,9 @@ export function SettingsContextProvider({ children }) {
     const languageOptions = [
         { value: "en-US", label: "English" },
         { value: "pt-BR", label: "Português" },
-        { value: "fr", label: "Français" }
+        { value: "fr", label: "Français" },
+        { value: "es", label: "Español" },
+        { value: "ja", label: "日本" }
     ]
 
     const [
