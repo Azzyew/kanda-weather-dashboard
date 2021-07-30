@@ -1,32 +1,37 @@
 import { useState, useEffect } from "react"
 import { useTranslation } from "react-i18next"
+import soilMoistureData from "../../../data/soil-moisture-data.json"
 import { SoilMoisture } from "../../../svg/icons/SoilMoisture"
 import { FloodRisk } from "./FloodRisk"
 
-export function SoilMoistureContainer({ region, date, soilMoisture }) {
+export function SoilMoistureContainer({ region, date }) {
   const { t } = useTranslation()
   const [floodRisk, setFloodRisk] = useState(false)
-  // const [soilM, setSoilM] = useState();
+  const [soilMoisture, setSoilMoisture] = useState()
 
   useEffect(() => {
-    // (async () => {
-    //   await axios.get('https://api.dclimate.net/apiv2/grid-history/era5_volumetric_soil_water_layer_1-hourly/5.68999972_-0.20985164?also_return_metadata=false&use_imperial_units=true&also_return_snapped_coordinates=true&convert_to_local_time=true', {
-    //     headers: {
-    //       'Access-Control-Allow-Origin': '*'
-    //     }
-    //   }).then((response) => {
-    //     if(response.data){
-    //       setSoilM(response.data);
-    //     }
-    //   }).catch((error) => {
-    //     console.log("Erro da request: ");
-    //     console.log(error);
-    //   })
-    // })();
-    soilMoisture === 0.28 || soilMoisture === 0.23 ? (
-      setFloodRisk(false)
-    ) : setFloodRisk(true)
-  }, [soilMoisture])
+    const currentDate = soilMoistureData[region][date]['data']
+    const averageSoilM = getAverageSoilMoisture(currentDate)
+
+    const last10Days = soilMoistureData[region][date]['last-10-days']
+    const last10DaysAverage = getAverageSoilMoisture(last10Days)
+
+    setSoilMoisture(averageSoilM)
+    setFloodRisk(last10DaysAverage < averageSoilM)
+  }, [date])
+
+  function getAverageSoilMoisture(obj) {
+    const soilMoistureValues = Object.values(obj)
+
+    const total = soilMoistureValues.reduce((total, value) => {
+      total += Number(value)
+      return total
+    }, 0)
+
+    const average = total / soilMoistureValues.length
+
+    return Number(average.toFixed(2))
+  }
 
   return (
     <section>

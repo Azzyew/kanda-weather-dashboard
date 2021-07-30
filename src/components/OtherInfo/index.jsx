@@ -7,7 +7,7 @@ import { SoilMoistureContainer } from './SoilMoistureContainer'
 
 import StyledContainer from './style'
 
-export function OtherInfo({ region, date, humidity, pressure, wind, soilMoisture }) {
+export function OtherInfo({ region, date, humidity, pressure, wind }) {
   const { t } = useTranslation()
 
   return (
@@ -39,7 +39,6 @@ export function OtherInfo({ region, date, humidity, pressure, wind, soilMoisture
       <SoilMoistureContainer
         region={region}
         date={date}
-        soilMoisture={soilMoisture}
       />
     </StyledContainer>
   )
