@@ -1,7 +1,7 @@
 export const forecasts = [
   {
     "region": "Uyo, NG",
-    "date": "January 18, 2021",
+    "date": "01/18/2021",
     "pressure": "1000.7 mb",
     "temperature": "29.5 C",
     "humidity": "77%",
@@ -11,7 +11,7 @@ export const forecasts = [
   },
   {
     "region": "Uyo, NG",
-    "date": "February 7, 2021",
+    "date": "02/07/2021",
     "pressure": "999.3 mb",
     "temperature": "34.7 C",
     "humidity": "57%",
@@ -21,7 +21,7 @@ export const forecasts = [
   },
   {
     "region": "Uyo, NG",
-    "date": "March 9, 2021",
+    "date": "03/09/2021",
     "pressure": "998.2 mb",
     "temperature": "34.9 C",
     "humidity": "60%",
@@ -31,7 +31,7 @@ export const forecasts = [
   },
   {
     "region": "Accra, GH",
-    "date": "June 9, 2021",
+    "date": "06/09/2021",
     "pressure": "1002.0 mb",
     "temperature": "32.7 C",
     "humidity": "68%",
