@@ -51,6 +51,7 @@ export default function App() {
             humidity={currentForecast.humidity}
             pressure={currentForecast.pressure}
             wind={currentForecast.wind}
+            soilMoisture={currentForecast.soilMoisture}
           />
         </main>
       </StyledApp>

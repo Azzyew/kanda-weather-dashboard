@@ -7,7 +7,8 @@ export const forecasts = [
     "humidity": "77%",
     "condition": "Cloudy",
     "wind": "WSW at 5 m/s",
-    "rainChance": "80%"
+    "rainChance": "80%",
+    "soilMoisture": 0.28
   },
   {
     "region": "Uyo, NG",
@@ -17,7 +18,8 @@ export const forecasts = [
     "humidity": "57%",
     "condition": "Cloudy",
     "wind": null,
-    "rainChance": "20%"
+    "rainChance": "20%",
+    "soilMoisture": 0.23
   },
   {
     "region": "Uyo, NG",
@@ -27,7 +29,8 @@ export const forecasts = [
     "humidity": "60%",
     "condition": "Sunny",
     "wind": "NE at 15 m/s",
-    "rainChance": "20%"
+    "rainChance": "20%",
+    "soilMoisture": 0.27
   },
   {
     "region": "Accra, GH",
@@ -37,6 +40,7 @@ export const forecasts = [
     "humidity": "68%",
     "condition": "Partly Cloudy",
     "wind": null,
-    "rainChance": "30%"
+    "rainChance": "30%",
+    "soilMoisture": 0.43
   }
 ]
