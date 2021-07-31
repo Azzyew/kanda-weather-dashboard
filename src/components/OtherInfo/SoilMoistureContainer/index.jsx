@@ -18,7 +18,7 @@ export function SoilMoistureContainer({ region, date }) {
 
     setSoilMoisture(averageSoilM)
     setFloodRisk(last10DaysAverage < averageSoilM)
-  }, [date])
+  }, [date, region])
 
   function getAverageSoilMoisture(obj) {
     const soilMoistureValues = Object.values(obj)
