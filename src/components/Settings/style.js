@@ -5,7 +5,7 @@ const SettingsContainer = styled.div`
   height: 100%;
   
   padding: 3rem;
-  borderRadius: 8px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
   background: var(--background);
 
@@ -47,6 +47,7 @@ export const ModalStyles = {
     opacity: 0
   },
   content: {
+    borderRadius: '8px',
     padding: 0,
     border: 0
   },
